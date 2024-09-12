@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Custochef</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/862f383ff0.js" crossorigin="anonymous"></script>
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/regular.min.css" rel="stylesheet">
+    <link href="css/light.min.css" rel="stylesheet">
+		<link href="css/duotone.min.css" rel="stylesheet">
+    <!-- Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    
+    <style>
+			:root {
+				--primary: #336633;
+				--secondary: #D9E5BA;
+				--secondary_dark1: #CCDCA3;
+				--secondary_dark2: #C0D48E;
+        --highlighted: #F9AB10;
+        --highlighted-dark1: #DE9606;
+        --highlighted-dark2: #B97D05;
+			}
+			.primary, h1.main-title span, .text-primary { color: var(--primary)!important; }
+			.bg-primary { background-color: var(--primary)!important; }
+			.bg-secondary { background-color: var(--secondary)!important; }
+			.border-primary { border-color: var(--primary)!important; }
+			.secondary { color: var(--secondary); }
+			.secondary_dark1 { color: var(--secondary_dark1);}
+			.secondary_dark2 { color: var(--secondary_dark2);}
+
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: "Roboto", system-ui;
+        font-weight: 300;
+        font-style: normal;
+      }
+      b, strong { font-weight: 500; }
+      #cooming_soon_page { 
+        background: url(img/bg_custochef.svg); 
+        background-size: cover; 
+        background-position: center top; 
+        background-repeat: no-repeat; background-color: var(--secondary);
+      }
+      #main_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+      }
+      @media screen and (max-width: 769px) {
+        #main_logo {
+          min-height: 30vh;
+        }
+        #main_logo #logo {
+          max-width: 200px;
+          margin-bottom: 80px;
+        }
+      }
+      #cooming_soon_ribbon { 
+        position: relative; 
+        background: linear-gradient(to bottom, white, var(--secondary)); 
+      }
+      .ribbon_position {
+        position: absolute; 
+        top: -58px; 
+        z-index: 1; 
+        width: 100%;
+      } 
+      
+			.ribbon {
+        font-size: 16px !important;
+        width: 50%;
+        position: relative;
+        background: var(--highlighted);
+        color: white;
+        text-align: center;
+        padding: 1em 2em;
+        margin: 2em auto 3em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      @media screen and (max-width: 769px) {
+        .ribbon {
+          width: 80%;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        .ribbon {
+          width: 40%;
+        }
+      }
+      .ribbon:before, .ribbon:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -1em;
+        border: 1.5em solid var(--highlighted-dark1);
+        z-index: -1;
+      }
+      .ribbon:before {
+        left: -2em;
+        border-right-width: 1.5em;
+        border-left-color: transparent;
+      }
+      .ribbon:after {
+        right: -2em;
+        border-left-width: 1.5em;
+        border-right-color: transparent;
+      }
+      .ribbon .ribbon_text:before, .ribbon .ribbon_text:after {
+        content: "";
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-color: var(--highlighted-dark2) transparent transparent transparent;
+        bottom: -1em;
+      }
+      .ribbon .ribbon_text:before {
+        left: 0;
+        border-width: 1em 0 0 1em;
+      }
+      .ribbon .ribbon_text:after {
+        right: 0;
+        border-width: 1em 1em 0 0;
+      }
+      .ribbon strong {
+        font-weight: 300;
+      }
+      .icon_circle_xl {
+        background-color: var(--secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid white;
+        border-radius: 50%;
+        padding: 1em;
+        width: 110px;
+        height: 110px;
+      }
+    </style>
+  </head>
+  <body id="cooming_soon_page">
+    <div id="main_logo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <img src="img/logo_custochef+tagline_color.svg" alt="Custochef" class="mb-2" id="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+		<div id="cooming_soon_ribbon">
+			<div class="ribbon_position">
+				<p class="ribbon">
+					<strong class="ribbon_text">Próximamente <span class="d-none d-xl-inline-block">disponible</span>...</strong>
+				</p>
+			</div>
+			<br>
+      <div class="container-fluid pb-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="p-4 mx-4 text-center">
+              <div class="icon_circle_xl m-auto">
+                <img src="img/pan-food.svg" alt="Icon">
+              </div>
+              <p class="text-primary mt-3">Custochef sirve comida de <strong>calidad</strong> personalizada. Alimentos sanos y nutritivos que puedes combinar y personalizar.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 mx-4 text-center">
+              <div class="icon_circle_xl m-auto">
+                <img src="img/user-chef.svg" alt="Icon">
+              </div>
+              <p class="text-primary mt-3">En Custochef puedes <strong>personalizar</strong> tu comida, de manera fácil prodrás configurar tu plato y adaptarlo a tus gustos y preferencias.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 mx-4 text-center">
+              <div class="icon_circle_xl m-auto">
+                <img src="img/salad.svg" alt="Icon">
+              </div>
+              <p class="text-primary mt-3">Custochef se preocupa de tus gustos, tu salud y tu dinero, optimizando todos los procesos para ofrecer una comida de calidad a un <strong>precio asequible</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <br>&nbsp;
+			</div>
+		</div>
+    
+    <!-- FOOTER -->
+    <footer class="text-light fixed-bottom border-top bg-secondary border-top border-white">
+      <!-- Copyright -->
+      <div class="p-3">
+        <div class="container-fluid text-primary">
+          <div class="row">
+            <div class="col text-center">
+              <img src="img/logo_symbol.svg" style="width: 32px;" class="me-2"><small>Custochef © 2024. Todos los derechos reservados</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--. end FOOTER -->
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
